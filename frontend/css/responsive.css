@@ -1,0 +1,545 @@
+/* Responsive Styles */
+
+/* ========== Large Desktop (1440px and up) ========== */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-7xl);
+  }
+
+  .section-title {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+/* ========== Desktop (1024px to 1439px) ========== */
+@media (max-width: 1439px) {
+  .hero-title {
+    font-size: var(--font-size-6xl);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========== Tablet (768px to 1023px) ========== */
+@media (max-width: 1023px) {
+  /* Navigation */
+  .nav-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    background: var(--bg-primary);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: var(--space-8);
+    transition: left var(--transition-normal);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: var(--font-size-lg);
+    padding: var(--space-4) 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /* Features */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  /* Benefits */
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .contact-info .section-title,
+  .contact-info .section-subtitle {
+    text-align: center;
+  }
+
+  .contact-details {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    text-align: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+}
+
+/* ========== Mobile Large (481px to 767px) ========== */
+@media (max-width: 767px) {
+  /* Base */
+  :root {
+    --section-padding-y: var(--section-padding-y-mobile);
+  }
+
+  /* Container */
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  /* Navigation */
+  .nav-container {
+    padding: 0 var(--space-4);
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 90vh;
+    padding: var(--space-8) 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  /* Section Headers */
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  /* Features */
+  .feature-card {
+    padding: var(--space-6);
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Benefits */
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .benefit-number {
+    font-size: var(--font-size-5xl);
+  }
+
+  /* Contact */
+  .contact-form-container {
+    padding: var(--space-6);
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+
+  /* Back to Top */
+  .back-to-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* ========== Mobile Small (320px to 480px) ========== */
+@media (max-width: 480px) {
+  /* Base */
+  html {
+    font-size: 14px;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 var(--space-3);
+  }
+
+  /* Navigation */
+  .nav-container {
+    padding: 0 var(--space-3);
+    height: 60px;
+  }
+
+  .nav-logo h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 80vh;
+    padding: var(--space-6) 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  .hero-buttons {
+    gap: var(--space-3);
+  }
+
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+    min-height: 40px;
+  }
+
+  /* Section Headers */
+  .section-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  /* Features */
+  .feature-card {
+    padding: var(--space-5);
+  }
+
+  .feature-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .feature-description {
+    font-size: var(--font-size-sm);
+  }
+
+  /* Benefits */
+  .benefit-number {
+    font-size: var(--font-size-4xl);
+  }
+
+  /* Contact */
+  .contact-form-container {
+    padding: var(--space-5);
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-sm);
+  }
+
+  .form-label {
+    font-size: var(--font-size-xs);
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--space-8) 0 var(--space-5);
+  }
+
+  .footer-info h3 {
+    font-size: var(--font-size-lg);
+  }
+
+  .footer-info p {
+    font-size: var(--font-size-sm);
+  }
+
+  .footer-links {
+    gap: var(--space-2);
+  }
+
+  .footer-link {
+    font-size: var(--font-size-sm);
+  }
+
+  .footer-bottom p,
+  .legal-link {
+    font-size: var(--font-size-xs);
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .divider {
+    display: none;
+  }
+
+  /* Back to Top */
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ========== Landscape Mobile ========== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding: var(--space-4) 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-4);
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    gap: var(--space-3);
+  }
+
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* ========== High DPI Displays ========== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .feature-icon svg,
+  .contact-icon svg {
+    transform: scale(0.95);
+  }
+}
+
+/* ========== Touch Device Optimizations ========== */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch target sizes */
+  .btn {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  .nav-link {
+    padding: var(--space-4);
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  /* Disable hover effects on touch devices */
+  .feature-card:hover,
+  .contact-item:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+  }
+
+  .nav-link:hover,
+  .footer-link:hover {
+    transform: none;
+  }
+}
+
+/* ========== Print Styles ========== */
+@media print {
+  /* Hide non-essential elements */
+  .navbar,
+  .hero-background,
+  .scroll-indicator,
+  .back-to-top,
+  .btn,
+  .hamburger,
+  .footer-social {
+    display: none !important;
+  }
+
+  /* Adjust layout for print */
+  .hero {
+    min-height: auto;
+    padding: var(--space-6) 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-2xl);
+    color: #000;
+  }
+
+  .hero-subtitle {
+    color: #666;
+  }
+
+  .section-title {
+    color: #000;
+  }
+
+  .section-subtitle {
+    color: #666;
+  }
+
+  .feature-card,
+  .contact-form-container {
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+
+  body {
+    background: white;
+    color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* ========== Very Small Screens ========== */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 var(--space-2);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .btn {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-xs);
+    min-width: 100px;
+  }
+
+  .feature-card,
+  .contact-form-container {
+    padding: var(--space-4);
+  }
+}
+
+/* ========== Ultra-wide Screens ========== */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .section-title {
+    font-size: var(--font-size-5xl);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========== Container Queries (Future-proofing) ========== */
+@supports (container-type: inline-size) {
+  @container (max-width: 600px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* ========== Focus Management for Mobile ========== */
+@media (max-width: 767px) {
+  .form-input:focus,
+  .form-textarea:focus {
+    transform: none;
+  }
+
+  .btn:focus {
+    transform: none;
+  }
+}
+
+/* ========== Dark Mode Support (Future Enhancement) ========== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Already dark mode by default */
+  }
+}
+
+/* ========== Light Mode Override (if needed) ========== */
+@media (prefers-color-scheme: light) {
+  .light-mode {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #e2e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+  }
+}

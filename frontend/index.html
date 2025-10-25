@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>전문 서비스 문의 | 귀하의 비즈니스 파트너</title>
+    <meta name="title" content="전문 서비스 문의 | 귀하의 비즈니스 파트너" />
+    <meta
+      name="description"
+      content="전문적인 서비스와 혁신적인 솔루션으로 비즈니스 성장을 지원합니다. 지금 문의하세요."
+    />
+    <meta name="keywords" content="비즈니스 서비스, 전문 컨설팅, 포트폴리오, 문의하기" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:title" content="전문 서비스 문의 | 귀하의 비즈니스 파트너" />
+    <meta
+      property="og:description"
+      content="전문적인 서비스와 혁신적인 솔루션으로 비즈니스 성장을 지원합니다."
+    />
+    <meta property="og:image" content="https://yourdomain.com/assets/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourdomain.com/" />
+    <meta property="twitter:title" content="전문 서비스 문의 | 귀하의 비즈니스 파트너" />
+    <meta
+      property="twitter:description"
+      content="전문적인 서비스와 혁신적인 솔루션으로 비즈니스 성장을 지원합니다."
+    />
+    <meta property="twitter:image" content="https://yourdomain.com/assets/images/og-image.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Google Analytics 4 - Disabled -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-XXXXXXXXXX");
+  </script> -->
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Your Company Name",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/assets/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+82-10-1234-5678",
+          "contactType": "customer service",
+          "areaServed": "KR",
+          "availableLanguage": ["ko", "en"]
+        },
+        "sameAs": [
+          "https://www.facebook.com/yourcompany",
+          "https://twitter.com/yourcompany",
+          "https://www.instagram.com/yourcompany"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="메인 네비게이션">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home" aria-label="홈으로 이동">
+            <h2>YourBrand</h2>
+          </a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">홈</a></li>
+          <li><a href="#features" class="nav-link">서비스</a></li>
+          <li><a href="#benefits" class="nav-link">장점</a></li>
+          <li><a href="#contact" class="nav-link">문의</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+      <!-- Hero Section -->
+      <section id="home" class="hero" role="banner">
+        <div class="hero-background" aria-hidden="true">
+          <div class="gradient-orb gradient-orb-1"></div>
+          <div class="gradient-orb gradient-orb-2"></div>
+          <div class="gradient-orb gradient-orb-3"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="title-line">혁신적인 솔루션으로</span>
+              <span class="title-line highlight">비즈니스 성공</span>
+              <span class="title-line">을 실현하세요</span>
+            </h1>
+            <p class="hero-subtitle">
+              전문적인 서비스와 창의적인 접근으로 고객의 성장을 지원하는 신뢰할 수 있는
+              파트너입니다.
+            </p>
+            <div class="hero-buttons">
+              <button
+                class="btn btn-primary"
+                onclick="scrollToSection('contact')"
+                data-event="cta_click"
+              >
+                <span>무료 상담 신청</span>
+              </button>
+              <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                <span>서비스 둘러보기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="scroll-arrow"></div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">우리의 전문 서비스</h2>
+            <p class="section-subtitle">고객의 성공을 위한 맞춤형 솔루션을 제공합니다</p>
+          </div>
+          <div class="features-grid">
+            <article class="feature-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L2 7L12 12L22 7L12 2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2 17L12 22L22 17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2 12L12 17L22 12"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">전략 컨설팅</h3>
+              <p class="feature-description">
+                데이터 기반의 전문적인 분석과 맞춤형 전략으로 비즈니스 목표를 달성합니다.
+              </p>
+            </article>
+
+            <article class="feature-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="2"
+                    y="3"
+                    width="20"
+                    height="14"
+                    rx="2"
+                    ry="2"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" />
+                  <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <h3 class="feature-title">디지털 혁신</h3>
+              <p class="feature-description">
+                최신 기술을 활용한 디지털 전환으로 비즈니스 경쟁력을 강화합니다.
+              </p>
+            </article>
+
+            <article class="feature-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 2L3 14H12L11 22L21 10H12L13 2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">성장 마케팅</h3>
+              <p class="feature-description">
+                효과적인 마케팅 전략으로 브랜드 가치를 높이고 매출을 증대시킵니다.
+              </p>
+            </article>
+
+            <article class="feature-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" />
+                  <path
+                    d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">지속 지원</h3>
+              <p class="feature-description">
+                프로젝트 완료 후에도 지속적인 관리와 최적화 서비스를 제공합니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section id="benefits" class="benefits">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">왜 저희를 선택해야 할까요?</h2>
+            <p class="section-subtitle">검증된 전문성과 차별화된 가치를 제공합니다</p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up">
+              <div class="benefit-number" data-count="500">0</div>
+              <div class="benefit-label">프로젝트 완료</div>
+            </div>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="benefit-number" data-count="98">0</div>
+              <div class="benefit-label">고객 만족도 (%)</div>
+            </div>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="benefit-number" data-count="15">0</div>
+              <div class="benefit-label">업계 경력 (년)</div>
+            </div>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="benefit-number" data-count="24">0</div>
+              <div class="benefit-label">고객 지원 (시간)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-info">
+              <h2 class="section-title">문의하기</h2>
+              <p class="section-subtitle">
+                프로젝트에 대해 궁금한 점이 있으시거나 상담을 원하신다면 언제든지 연락주세요. 빠른
+                시일 내에 답변드리겠습니다.
+              </p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                      <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </div>
+                  <div class="contact-text">
+                    <h4>이메일</h4>
+                    <p><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.59531 1.99522 8.06679 2.16708 8.43376 2.48353C8.80073 2.79999 9.03996 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9615 21.2094 15.203 21.5265 15.5715C21.8437 15.9399 22.0122 16.412 22.01 16.92H22Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact-text">
+                    <h4>전화</h4>
+                    <p><a href="tel:+821012345678">010-1234-5678</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">이름 *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    aria-describedby="nameError"
+                  />
+                  <div class="form-error" id="nameError" role="alert"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">이메일 *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    aria-describedby="emailError"
+                  />
+                  <div class="form-error" id="emailError" role="alert"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">전화번호</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="010-1234-5678"
+                    aria-describedby="phoneError"
+                  />
+                  <div class="form-error" id="phoneError" role="alert"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="company" class="form-label">회사명</label>
+                  <input type="text" id="company" name="company" class="form-input" />
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">메시지 *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    rows="5"
+                    required
+                    aria-required="true"
+                    aria-describedby="messageError"
+                  ></textarea>
+                  <div class="form-error" id="messageError" role="alert"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                  <span class="btn-text">메시지 보내기</span>
+                  <span class="btn-spinner" id="btnSpinner" aria-hidden="true"></span>
+                </button>
+              </form>
+              <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>YourBrand</h3>
+            <p>혁신적인 솔루션으로 비즈니스 성공을 실현합니다.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home" class="footer-link">홈</a>
+            <a href="#features" class="footer-link">서비스</a>
+            <a href="#benefits" class="footer-link">장점</a>
+            <a href="#contact" class="footer-link">문의</a>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://facebook.com"
+              class="social-link"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com"
+              class="social-link"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com"
+              class="social-link"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 YourBrand. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="/privacy" class="legal-link">개인정보처리방침</a>
+            <span class="divider">|</span>
+            <a href="/terms" class="legal-link">이용약관</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="맨 위로 이동">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 14L12 9L17 14"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
