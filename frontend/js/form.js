@@ -9,7 +9,7 @@ const FormController = (function () {
   let fields = {};
   let validationRules = {};
   // 배포 시에는 실제 백엔드 URL로 변경
-  let apiEndpoint = "https://your-backend.railway.app/api/contact";
+  let apiEndpoint = "https://spen-driven-dev-landingpage-production.up.railway.app/api/contact";
   // 로컬 개발 시: "http://localhost:3000/api/contact"
   let isSubmitting = false; // 중복 제출 방지
 

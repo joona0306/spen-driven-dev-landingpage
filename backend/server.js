@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(
   cors({
-    origin: "*",
+    origin: process.env.CORS_ORIGIN || "*", // 배포 시 환경 변수로 제한
     credentials: true,
   })
 );
