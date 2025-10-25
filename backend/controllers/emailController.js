@@ -31,7 +31,7 @@ const sendContactEmail = async (req, res) => {
 
     // Send email using Resend API
     await resend.emails.send({
-      from: process.env.EMAIL_FROM || "onboarding@resend.dev",
+      from: `Andrew Portfolio <${process.env.EMAIL_FROM || "onboarding@resend.dev"}>`,
       to: process.env.EMAIL_TO,
       subject: mailOptions.subject,
       html: mailOptions.html,
