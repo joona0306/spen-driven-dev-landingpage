@@ -99,10 +99,8 @@ const AppController = (function () {
     document.body.classList.remove("loading");
     document.body.classList.add("loaded");
 
-    // Initialize animations
-    if (window.animationController) {
-      window.animationController.init();
-    }
+    // Animation controller is already initialized in animations.js
+    // No need to call init() again here
 
     // Track page fully loaded
     if (window.Analytics) {
@@ -300,16 +298,16 @@ const AppController = (function () {
     criticalCSS.as = "style";
     document.head.appendChild(criticalCSS);
 
-    // Preload critical images
-    const criticalImages = ["assets/images/hero-bg.jpg", "assets/images/logo.png"];
-
-    criticalImages.forEach((src) => {
-      const link = document.createElement("link");
-      link.rel = "preload";
-      link.href = src;
-      link.as = "image";
-      document.head.appendChild(link);
-    });
+    // Preload critical images (주석 처리 - 이미지 파일이 추가되면 활성화)
+    // const criticalImages = ["assets/images/hero-bg.jpg", "assets/images/logo.png"];
+    //
+    // criticalImages.forEach((src) => {
+    //   const link = document.createElement("link");
+    //   link.rel = "preload";
+    //   link.href = src;
+    //   link.as = "image";
+    //   document.head.appendChild(link);
+    // });
   }
 
   /**
@@ -349,7 +347,10 @@ const AppController = (function () {
 
     // Handle mobile/desktop transition
     if (wasMobile !== state.isMobile) {
-      if (window.animationController) {
+      if (
+        window.animationController &&
+        typeof window.animationController.closeMobileMenu === "function"
+      ) {
         // Close mobile menu if switching to desktop
         if (!state.isMobile) {
           window.animationController.closeMobileMenu();

@@ -224,7 +224,10 @@ const AnimationController = (function () {
    * Setup Mobile Menu
    */
   function setupMobileMenu() {
-    if (!elements.hamburger || !elements.navMenu) return;
+    if (!elements.hamburger || !elements.navMenu) {
+      console.error("Mobile menu elements not found!");
+      return;
+    }
 
     elements.hamburger.addEventListener("click", () => {
       const isActive = elements.navMenu.classList.contains("active");
@@ -381,6 +384,7 @@ const AnimationController = (function () {
     setupFeatureCardEffects,
     animateSectionOnScroll,
     resetAnimations,
+    closeMobileMenu,
   };
 })();
 
