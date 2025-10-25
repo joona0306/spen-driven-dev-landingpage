@@ -1,4 +1,5 @@
-const transporter = require("../config/nodemailer");
+const { Resend } = require("resend");
+const resend = new Resend(process.env.RESEND_API_KEY);
 const fs = require("fs");
 const path = require("path");
 
@@ -28,8 +29,14 @@ const sendContactEmail = async (req, res) => {
       replyTo: email,
     };
 
-    // Send email
-    await transporter.sendMail(mailOptions);
+    // Send email using Resend API
+    await resend.emails.send({
+      from: process.env.EMAIL_FROM || "onboarding@resend.dev",
+      to: process.env.EMAIL_TO,
+      subject: mailOptions.subject,
+      html: mailOptions.html,
+      replyTo: mailOptions.replyTo,
+    });
 
     // Send success response
     res.status(200).json({
